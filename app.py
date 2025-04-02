@@ -19,7 +19,8 @@ def generate_image():
     # Print all fields in the dictionary
     print("Received Data:")
     for key, value in data.items():
-        print(f"{key}: {value}")
+        if len(value)<=30: #filtro imposto in maniera arbitraria
+            print(f"{key}: {value}")
     
     text = "\n".join([f"{key}: {value}" for key, value in data.items()])
     
