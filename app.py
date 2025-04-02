@@ -12,14 +12,6 @@ CORS(app)
 def health_check():
     return jsonify({"status": "healthy", "message": "API is running"}), 200
 
-from flask import Flask, request, send_file
-from flask_cors import CORS
-from PIL import Image, ImageDraw, ImageFont
-import io
-
-app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
-
 @app.route('/generate_image', methods=['POST'])
 def generate_image():
     data = request.json
