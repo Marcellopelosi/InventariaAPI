@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import os
-from ultralytics import YOLO
 from PIL import Image, ImageDraw, ImageFont
 import io
 import base64
