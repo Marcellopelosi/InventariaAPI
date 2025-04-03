@@ -25,7 +25,7 @@ def generate_image():
     text = "\n".join([f"{key}: {value}" for key, value in data.items()])
     
     # Create an image
-    img = Image.new('RGB', (200, 400), color=(255, 255, 255))
+    img = Image.new('RGB', (700, 800), color=(255, 255, 255))
     draw = ImageDraw.Draw(img)
     
     try:
